@@ -1,0 +1,167 @@
+@import url(/clone/common.css);
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/notice/bg_type1.9b5e759.gif);
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{padding: 10px;}
+td{padding: 20px;}
+
+
+
+
+
+
+.notice th{border-bottom: 1px solid black;}
+.notice td{border-bottom: 1px solid rgba(237, 231, 225,1);
+}
+
+
+.notice{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.notice > div:nth-of-type(1){
+    width: 1200px;
+    text-align: center;
+}
+
+.notice > div:nth-of-type(1) > p{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notice > div:nth-of-type(1) > h2{
+    
+    margin-bottom: 70px;
+}
+
+.notice > div:nth-of-type(2){
+    width: 1000px;
+    padding-left: 70px;
+}
+
+.notice > div:nth-of-type(2) > span{
+    color: #a2a2a5;} 
+.notice > div:nth-of-type(2) > strong{}
+
+
+
+
+
+
+
+
+.table{
+    width:1000px;
+    margin: 40px auto;
+}
+
+.thead{
+    
+}
+
+
+
+.tbody{ ;
+}
+
+.tbody > tr{
+    transition: 0.2s;
+}
+.tbody > tr:hover{
+background-color: rgba(80,80,80,0.1)
+}
+.tbody > tr > td{}
+.tbody > tr > td:nth-of-type(1){}
+.tbody > tr > td:nth-of-type(2){
+    font-size: 16px;
+    color: #a2a2a5;
+}
+
+.tbody > tr:nth-child(1) > td:nth-child(1)::after{
+    content: '';
+    
+    width: 12px; height: 16px;
+    background-image: url(./img/notice/다운로드.png);
+    background-position: ;
+}
+
+
+
+
+
+
+
+
+.page{
+    margin: 100px 0 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+}
+
+
+
+
+
+
+
+.page > div > p{
+    border: 1px solid grey;
+    padding: 0px 7px 0 7px;
+    font-size: 19px;
+
+}
+.page > div > p > a{
+    margin: 0 auto;}
+
+
+
+.page > div > p:hover{
+    background-color:#235b94;
+}
+.page > div > p > a:hover{color: white;}
+
+
+
+
+
+.back > p::before{
+    display: inline-block;
+    content: '';
+    width: 18px;
+    height: 15px;
+    background-image: url(./img/notice/다운로드\ \(1\).png);
+}
+
+
+.next > p::after{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(./img/notice/다운로드\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position-x: -15px;
+}
+
