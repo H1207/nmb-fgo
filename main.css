@@ -43,9 +43,40 @@ header{
     display: flex;
     justify-content:space-between;}
 
+
+
+.r-trigger-menu{
+    width: 30px;
+    height: 16px;
+    position: relative;
+    background: none;
+    border: none;
+
+
+}
+
+
+
+.r-trigger-menu > span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:black;
+    transition: 0.5s;
+}
+.r-trigger-menu > span:nth-of-type(1){top:0%;}
+.r-trigger-menu > span:nth-of-type(2){top:50%;}
+.r-trigger-menu > span:nth-of-type(3){top:100%;}
+
+.r-trigger-menu:checked>span:nth-of-type(){}
+
+
+
 .hl > ul {
     display: flex;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+    padding-left: 30px;}
 
 .hl > ul > div{
     height: 30px;
@@ -70,30 +101,37 @@ header{
     color:#235b94 ;}
 
 
-.hl > ul > div:nth-of-type(2){
+
+.r-main{
+    display: none;
 }
 
-.hl > ul > div:nth-of-type(2) > ul{
+
+
+.hl > ul > div:nth-of-type(3){
+}
+
+.hl > ul > div:nth-of-type(3) > ul{
     display: block;
     display: flex;
     justify-content: center;
     background-color:magenta;
 }
 
-.hl > ul > div:nth-of-type(2) > ul > li{
+.hl > ul > div:nth-of-type(3) > ul > li{
     margin: 10px;
 }
 
 
 
-.hl > ul > div:nth-of-type(2) > ul{}
+.hl > ul > div:nth-of-type(3) > ul{}
 
 
-.hl > ul > div:nth-of-type(6){
+.hl > ul > div:nth-of-type(7){
 }
 
 
-.hl > ul > div:nth-of-type(6) > a::after{
+.hl > ul > div:nth-of-type(7) > a::after{
     content: '';
     display: inline-block;
     width: 48px;

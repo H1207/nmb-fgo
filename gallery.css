@@ -125,13 +125,14 @@ body{
 .video >  ul > li > a > p:nth-child(1)::before{
     display: block;
     content: '';
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     background-image: url(./img/gallery/playbutton.png);
     background-repeat: no-repeat;
     top: 20%;
-    background-position-x: 120px;
+    background-position-x: 145px;
+    background-position-y: 10px;
     z-index:9;}
 
 

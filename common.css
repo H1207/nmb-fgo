@@ -76,7 +76,6 @@ a{text-decoration: none;}
 
 
 
-
 header{
     width: 100%;
     margin: 0 auto;
@@ -119,7 +118,8 @@ header{
 
 .hl > ul {
     display: flex;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+    padding-left: 30px;}
 
 .hl > ul > div{
     height: 30px;
@@ -144,30 +144,37 @@ header{
     color:#235b94 ;}
 
 
-.hl > ul > div:nth-of-type(2){
+
+.r-main{
+    display: none;
 }
 
-.hl > ul > div:nth-of-type(2) > ul{
+
+
+.hl > ul > div:nth-of-type(3){
+}
+
+.hl > ul > div:nth-of-type(3) > ul{
     display: block;
     display: flex;
     justify-content: center;
     background-color:magenta;
 }
 
-.hl > ul > div:nth-of-type(2) > ul > li{
+.hl > ul > div:nth-of-type(3) > ul > li{
     margin: 10px;
 }
 
 
 
-.hl > ul > div:nth-of-type(2) > ul{}
+.hl > ul > div:nth-of-type(3) > ul{}
 
 
-.hl > ul > div:nth-of-type(6){
+.hl > ul > div:nth-of-type(7){
 }
 
 
-.hl > ul > div:nth-of-type(6) > a::after{
+.hl > ul > div:nth-of-type(7) > a::after{
     content: '';
     display: inline-block;
     width: 48px;
@@ -175,6 +182,10 @@ header{
     background-image: url(./img/main/ico_lnb_close.f131db3.png);
     background-size: cover;
 }
+
+
+
+
 
 
 
