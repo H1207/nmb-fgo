@@ -1,0 +1,154 @@
+@import url(./common.css);
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image:url(./img/gallery/bg_type1.9b5e759.gif);
+}
+
+.whole{ 
+    width: 100%; 
+    height: 100%;
+}
+
+.gallery { 
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 200px;
+
+    
+}
+.gallery > div{
+
+    
+
+
+}
+.gallery > div:nth-child(1){
+    margin-bottom: 50px;
+}
+
+.gallery > div:nth-child(1)>p{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+.video{}
+.video > div:nth-child(1){
+    padding-bottom: 0px;
+}
+
+
+
+
+
+#area > p{  height: 60px; 
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+    color: #202020;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin: 20px 0 20px 0;}
+
+
+.video >  ul{
+    
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 10px;
+}
+
+
+.video > ul::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 200px;
+    display: block;
+    background-image: url(./img/gallery/btn_swiper_arr.ca017f7.png);
+    background-repeat: no-repeat;
+    background-position-x: -40px;
+    background-position-y: 70px;
+    
+    
+    
+}
+
+.video > ul::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 200px;
+    display: block;
+    background-image: url(./img/gallery/btn_swiper_arr.ca017f7.png);
+    background-repeat: no-repeat;
+    background-position-x: -90px;
+    background-position-y: 70px ;
+    
+    
+}
+
+
+
+
+.video > ul > li{ width: 30%;}
+
+.video >  ul > li > a{
+    position: relative;
+}
+
+.video >  ul > li > a > p{}
+.video >  ul > li > a > p:nth-child(1){
+}
+.video >  ul > li > a > p:nth-child(1) > img{
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+}
+.video >  ul > li > a > p:nth-child(1) > img  :active{
+    width: 100%;
+    -webkit-filter: grayscale(0%)
+}
+
+
+.video >  ul > li > a > p:nth-child(1)::before{
+    display: block;
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-image: url(./img/gallery/playbutton.png);
+    background-repeat: no-repeat;
+    top: 20%;
+    background-position-x: 145px;
+    background-position-y: 10px;
+    z-index:9;}
+
+
+.video >  ul > li > a > p:nth-child(2){   
+    text-align: center;
+    height: 30px; 
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+    color: #202020;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    margin-top: 35px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+

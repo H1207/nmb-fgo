@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://127.0.0.1:5500/all/javascript/content/header2-ani.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        *{box-sizing: border-box; }
+        body{margin: 0;}
+        ul{margin: 0; padding: 0; list-style: none;}
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        header{
+            position: fixed;
+            width: 100%;
+        }
+
+
+        .menu{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: wheat;
+            z-index: 99;
+            padding: 0 10%;
+            height: 30px;
+            position: relative;
+        }
+        .menu h1{}
+        .menu nav{           
+            }
+
+        .menu nav ul{    
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu nav ul li{
+        }
+        .menu nav ul li > a {
+            color: black;
+            display: block;
+            padding: 65px 65px;
+        }
+
+
+        .sub {
+            position: absolute;
+            left: 0; bottom:0px;
+            background-color: white;
+            width:100%;
+            padding: 5%;
+            text-align:center;
+            z-index: 1;
+            transition: 1s;
+            transform: translateY(0%);
+        }
+        .sub.active{transform: translateY(100%);}
+
+        .sub > ul{
+            display: flex;
+            justify-content: space-between;  
+            width: 80%;
+            margin: 0 auto;
+            
+            transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+            transform: translateY(-10%);
+        }
+        .sub.active ul{opacity:1; transform: translateY(0%);}
+
+        
+        .sub > ul > li {
+        
+        }
+        
+        
+        .sub ul li a {
+            color: black;
+            display: block;
+            
+        }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+        <div class="menu">
+            <h1>BI</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">기업정보</a></li>
+                    <li><a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">기업정보</a></li>
+                    <li><a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">기업정보</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="sub">
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub01</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub01</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub01</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub02</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub02</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub02</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub03</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub03</a>
+                    <a href="http://127.0.0.1:5500/all/javascript/content/header2-ani.html">sub03</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+
+
+<script>
+    /* const elNav = document.querySelector('.menu nav'); */
+    const elSub = document.querySelector('.sub');
+    const elheader = document.querySelector('header');
+
+
+    function nav(){
+
+        console.log(event.target.tagName)
+
+        if(0){
+            elSub.classList.add('active');
+        }else{
+            elSub.classList.remove('active');
+        }
+    }
+
+
+
+
+    elheader.addEventListener('mouseenter',nav(){
+    
+    });
+
+
+
+
+/*     elNav.addEventListener('mouseenter',function(){
+        elSub.classList.add('active');
+    });
+    elNav.addEventListener('mouseleave',function(){
+    elSub.classList.remove('active');
+    });
+     */
+    
+
+</script>
+
+
+
+
+
+    S
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
