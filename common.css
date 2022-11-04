@@ -1,0 +1,717 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,500;0,600;0,700;1,100;1,200;1,400;1,500&family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,500;0,600;0,700;1,100;1,200;1,400;1,500&family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+KR:wght@500&display=swap');
+
+
+/* common.css */
+
+html,body{ margin:0; }
+*{box-sizing: border-box;}
+
+ul,li{
+    list-style-type: none;
+    margin:0; padding:0;}
+
+h1,h2,h3,h4,h5,h6,p,figure,a, figcaption{ margin:0; }
+img{vertical-align: top;}
+a{text-decoration: none;}
+
+
+
+/* clone coding  */
+header{color: #202020;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;}
+
+/*  .hl > ul > div> a:hover{color:#235b94 ;} */
+/* 반응형 헤더 background-color: #2f335b; */
+
+*:visited {color: black; }
+*{color: #202020;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif}
+
+
+h2{font-size: 50px;
+    font-family: "NotoSerifKR-Regular",Serif;
+    color: #202020;
+    font-weight: 400;}
+
+p{  font-family: 'EB Garamond', serif;
+    color: #949496;
+    font-size: 16px;
+    letter-spacing: 10px;}
+
+
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+===================================헤더 header  ===============================
+===============================================================================
+===============================================================================
+*/
+
+
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 10px 100px;
+    padding-top: 30px;
+    position: sticky;
+    top: -67px;
+    z-index: 9999999;
+    background-color: white;
+}
+
+
+
+
+
+
+
+.logo-n>a {margin-top:10px;
+}
+
+.logo-n > a::before{
+    content: '';
+    width: 168px;
+    height: 45px;
+    background-image:url(./img/main/netmarble2.png);
+    background-position-y: -45px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+.h{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hl{
+    display: flex;
+    justify-content:space-between;}
+
+
+
+.r-trigger-menu{
+    width: 30px;
+    height: 16px;
+    position: relative;
+    background: none;
+    border: none;
+    display: none;
+}
+
+
+
+.r-trigger-menu > span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:black;
+    transition: 0.5s;
+}
+.r-trigger-menu > span:nth-of-type(1){top:0%; }
+.r-trigger-menu > span:nth-of-type(2){top:50%;}
+.r-trigger-menu > span:nth-of-type(3){top:100%;}
+
+
+.hl > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    z-index:99999;
+}
+
+.hl > ul > div{
+    height: 30px;
+    width: 170px;
+}
+
+.hl > ul > div> a:hover{
+    color:#235b94 ;
+}
+
+.hl > ul > div> a{ 
+    padding: 5px;
+    font-size:20px;
+    font-weight: 400px;
+    line-height: 70px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* .hl > ul > div> a:visited {color: #202020; } */
+.hl > ul > div> a:hover{
+    color:#235b94 ;}
+
+
+.hl > ul > div:nth-child(2).active > a{color:#235b94 ;}
+.hl > ul > div:nth-child(5).active > a{color:#235b94 ;}
+.hl > ul > div:nth-child(6).active > a{color:#235b94 ;}
+
+.r-main{
+    display: none;
+}
+
+
+.hl > ul > div:nth-of-type(3) > ul{}
+
+
+.hl > ul > div:nth-of-type(7){
+}
+
+
+.hl > ul > div:nth-of-type(7) > a::after{
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 18px;
+    background-image: url(./img/main/ico_lnb_close.f131db3.png);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    display: none;
+    }
+
+
+
+.icon > img{}
+    
+.download{
+    display: flex;}
+
+.download > a{
+    width: 200px;
+    margin: 5px;}
+.download > a > img{width: 100%;}
+.download > a:nth-child(1){}
+.download > a:nth-child(2){} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+==================================스크롤 배너 scrollbanner  ==================
+===============================================================================
+===============================================================================
+*/
+
+
+.scrollbanner{
+
+    background-color: #202020;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed; 
+    bottom: 5%;
+    right: 5%; 
+    padding: 3px;
+    z-index: 99999;
+}
+
+
+.scrollbanner > p {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif
+}
+
+.scrollbanner > p::before{
+    content: '';
+    width: 50px;
+    height: 20px;
+    display: block;
+    background-image: url(./img/main/download1.png);
+    background-repeat: no-repeat;
+    background-position: 17px;
+    
+}
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+================================푸터 footer ==================
+===============================================================================
+===============================================================================
+*/
+
+
+
+
+.footer {
+    background-color:black;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    display: block;
+}
+
+.footer > div:nth-child(1){
+    padding-top:50px;
+}
+.footer> div> a {
+    color: grey;
+    justify-content: center; 
+    text-align: center;
+}
+.footer > div > a:visited {color:grey; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+==============================반응형 헤더 header ================================
+===============================================================================
+===============================================================================
+*/
+
+
+
+
+
+@media(max-width:480px){
+
+
+
+    header{
+        width: 100vw;
+        margin: 0 auto;
+        position: fixed; 
+        top: 0px;
+        z-index: 9999999;
+        background-color:#2f335b;
+        padding: 10px 10px 7px 10px;
+    }
+    
+    
+    .logo-n>a {/* margin-top:0px; */ display:none;
+    }
+    
+    .logo-n > a::before{
+/*         content: '';
+        width: 168px;
+        height: 45px;
+        background-image:url(./img/main/netmarble2.png);
+        background-position-y: -45px;
+        background-repeat: no-repeat;
+        display: block; */
+        display:none;
+    }
+    
+    .h{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .hl{width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center; 
+        }
+    
+    
+
+
+
+    .r-trigger-menu{
+        width: 20px;
+        height: 15px;
+        position: relative;
+        background: none;
+        border: none;
+        display: block;
+    }
+    
+    
+    .r-trigger-menu > span{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color:white;
+        transition: 0.5s;
+        display: block;
+    }
+
+    .r-trigger-menu > span:nth-of-type(1){top:0%; transform: rotate(0);}
+    .r-trigger-menu > span:nth-of-type(2){top:50%;transform: rotate(0);}
+    .r-trigger-menu > span:nth-of-type(3){top:100%;transform: rotate(0);}
+
+
+
+    .r-trigger-menu.active>span:nth-of-type(1){
+        top: 50%; transform: rotate(45deg);
+    }
+    .r-trigger-menu.active>span:nth-of-type(2){
+        top:50%; opacity: 0;
+    }
+    .r-trigger-menu.active>span:nth-of-type(3){
+        top: 50%; transform: rotate(-45deg);
+    }
+    
+
+
+
+
+
+    .hl > .hl-f-logo{height: 40px;}
+    .hl > .hl-f-logo > picture{height: 100%;}
+    .hl > .hl-f-logo > picture > img { height: 100%;}
+    .hl > .hl-f-logo > picture > source { height: 100%;}
+
+
+
+
+
+
+
+    .hl > ul {
+        position: fixed;
+        left: 0; top: 60px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: ; */
+        padding-bottom: 20px;
+        background: url(./img/main/bg_type2.b740b72.gif);
+        width: 100%;
+        height : 500px;
+        transform: translateY(-150%); 
+        transition: 1s;
+        z-index: -999;
+        /* display: none; */
+    }
+
+    .hl > ul.active {transform: translateY(0);}
+    
+    
+
+    .hl > ul > div{
+        width: 100%;
+        height: 1%;
+        padding: 3% 0 3% 6%;
+    }
+    
+
+    
+    .hl > ul > div> a{ 
+        padding: 0px;
+        font-size:1.5rem;
+        font-weight: none;
+        line-height: 1;
+        text-decoration: none;
+        text-align: left;
+        
+    }
+    
+    .hl > ul > div> a:visited {color: #202020; }
+    .hl > ul > div> a:hover{
+        color: #202020;}
+    
+    
+
+    .r-main{
+        display: none;
+    }
+    
+    
+    .hl > ul > div:nth-of-type(3){
+    }
+    
+    .hl > ul > div:nth-of-type(3) > ul{
+        display: block;
+        display: none;
+        justify-content: center;
+        background-color:magenta;
+    }
+    
+    .hl > ul > div:nth-of-type(3) > ul > li{
+        margin: 0;
+    }
+    
+    
+    .hl > ul > div:nth-of-type(3) > ul{}
+    
+    .hl > ul > div:nth-of-type(6) > a{
+        display: block;
+    }
+
+    .hl > ul > div:nth-of-type(6).active{
+        /* transform: translateX(-100px); transition: 0.1s; */}
+    
+    
+    .hl > ul > div:nth-of-type(7) > a::after{
+        content: '';
+        display: inline-block;
+        width: 48px;
+        height: 18px;
+        background-image: url(./img/main/ico_lnb_close.f131db3.png);
+        background-size: cover;
+    }
+    
+    /* .hl > ul > div:nth-of-type(3).active a{
+        color: #202020;;
+    }
+    .hl > ul > div:nth-of-type(4).active a{
+        color: #202020;;
+    }
+ */
+
+    
+
+
+    
+/* 
+======================================================
+hl 끝!!! hr 시작 
+======================================================
+*/
+
+    
+    
+    
+    .hr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    
+    .icon{
+        background-color: white;}
+    
+    
+    .icon > img{}
+        
+    .download{
+        display: flex;
+        display:none;}
+                
+                .download > a{
+                    width: 200px;
+                    margin: 5px;}
+                .download > a > img{width: 100%;}
+                .download > a:nth-child(1){}
+                .download > a:nth-child(2){} 
+                
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+==============================반응형 스크롤 배너 scrollbanner================
+===============================================================================
+===============================================================================
+*/
+
+.scrollbanner{
+
+    background-color: #2f335b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed; 
+    bottom: 5%;
+    right: 10%; 
+    padding: 1px;
+}
+
+
+.scrollbanner > p {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif
+}
+
+.scrollbanner > p::before{
+    content: '';
+    width: 50px;
+    height: 20px;
+    display: block;
+    background-image: url(./img/main/download1.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+===============================================================================
+===============================================================================
+==============================반응형 푸터 footer================================
+===============================================================================
+===============================================================================
+*/
+
+
+
+body{width: 100%; margin:0;}
+
+
+#wrapper{
+    width: 100%;
+    position: relative; 
+    
+}
+
+.main{height: auto; margin-bottom: 20px;}
+
+
+
+
+
+
+.footer {
+    background-color:black;
+    font-size: 0.2rem;
+    width: 100vw;
+
+
+
+    height: 200px;
+    text-align: center;
+    display: block;
+
+
+}
+
+.footer > div:nth-child(1){
+    
+
+}
+.footer> div> a {
+    color: grey;
+    justify-content: center; 
+    text-align: center;
+    padding:0px 0 0 0px;
+}
+.footer > div > a:visited {color:grey; }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
